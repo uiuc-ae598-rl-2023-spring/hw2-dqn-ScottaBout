@@ -2,6 +2,7 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 import discreteaction_pendulum
+import torch
 
 
 def main():
@@ -41,6 +42,7 @@ def main():
 
     # Initialize simulation
     s = env.reset()
+    print(f's = {torch.Tensor(s)}')
 
     # Create dict to store data from simulation
     data = {
@@ -54,6 +56,7 @@ def main():
     done = False
     while not done:
         a = random.randrange(env.num_actions)
+        print(f'a = {int(a)}')
         (s, r, done) = env.step(a)
         data['t'].append(data['t'][-1] + 1)
         data['s'].append(s)
