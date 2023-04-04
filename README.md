@@ -3,6 +3,9 @@
 
 ## What to do
 
+### Peer Review
+I reviewed repository hw2-dqn-dmccann3. This was Dennis McCann's repository - Github username: dmccann3
+
 ### Algorithms
 Your goal is to implement the Deep Q Network (DQN) algorithm for reinforcement learning in a "function approximation" setting. The key difference between DQN and Q-learning (which you implemented in HW1) is that DQN uses a neural network to approximate the Q-function rather than a table. One consequence is that DQN can be applied to systems with a *continuous* state space, while Q-learning can only be applied to systems with a *finite* state space. Note, however, that DQN still requires a finite action space.
 
