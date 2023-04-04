@@ -71,12 +71,12 @@ def main():
 
     # Plot data and save to png file
     fig, ax = plt.subplots(3, 1, figsize=(10, 10))
-    ax[0].plot(data['t'], theta, label='theta')
-    ax[0].plot(data['t'], thetadot, label='thetadot')
+    ax[0].plot_return(data['t'], theta, label='theta')
+    ax[0].plot_return(data['t'], thetadot, label='thetadot')
     ax[0].legend()
-    ax[1].plot(data['t'][:-1], tau, label='tau')
+    ax[1].plot_return(data['t'][:-1], tau, label='tau')
     ax[1].legend()
-    ax[2].plot(data['t'][:-1], data['r'], label='r')
+    ax[2].plot_return(data['t'][:-1], data['r'], label='r')
     ax[2].legend()
     ax[2].set_xlabel('time step')
     plt.tight_layout()
